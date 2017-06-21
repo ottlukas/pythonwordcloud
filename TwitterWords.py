@@ -10,10 +10,10 @@ sys.setdefaultencoding('utf-8')
 def grey_color_func(word, font_size, position, orientation, random_state=None, **kwargs):
     return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
 
-consumer_key = 'ApnxFhhjoz8eZL7ofISqD8M7k'
-consumer_secret = 'cVZE2imOv0ct2lmA8Y4ZbXPn5yIs6fGeczwsizGB09xC9y889s'
-access_token = '1288030992-20LasXUuy0aT4Bn4qkLfuuymht3hD2ia7DFgadQ'
-access_secret = 'N3dmYIb0ymRfDTMz36miLSMYtsB37G249PUtemlbiDC47'
+consumer_key = 'key'
+consumer_secret = 'secret'
+access_token = 'token'
+access_secret = 'secret'
  
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
@@ -37,7 +37,7 @@ stopwords = {'will', 'youtube', 'YouTube'}
 logomask = imread('twitter_mask.png')
 
 wordcloud = WordCloud(
-    font_path='Voyager Grotesque(regular).ttf',
+    font_path='Voyager.ttf',
     stopwords=STOPWORDS.union(stopwords),
     background_color='black',
     mask = logomask,
